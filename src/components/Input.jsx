@@ -36,8 +36,9 @@ function CurrentForm({ updateCurrentContent }) {
   }
 
   function updateCurrentOnSubmit() {
-    const totalMatches = calculateTotalMatches(formData.wins, formData.losses);
-    const winRate = calculateWinRate(formData.wins, formData.losses);
+    const totalMatches =
+      calculateTotalMatches(formData.wins, formData.losses) || 0;
+    const winRate = calculateWinRate(formData.wins, formData.losses) || 0;
     updateCurrentContent(totalMatches, winRate);
   }
 

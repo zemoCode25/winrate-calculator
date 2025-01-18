@@ -27,7 +27,7 @@ export function WrCalculator() {
 
   return (
     <main>
-      <div className="flex justify-between gap-7">
+      <div className="flex flex-col md:flex-row justify-between gap-7">
         <Result
           page={calculator}
           content={{ ...currentContent, consecutiveWins }}
