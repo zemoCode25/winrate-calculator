@@ -3,7 +3,7 @@ import { WrCalculator } from "./components/WrCalculator";
 export function App() {
   return (
     <div className="w-dvw h-dvh flex flex-col items-center justify-center font-Inter">
-      <div className="flex flex-col items-center border border-gray-200 shadow-custom p-6 rounded-lg">
+      <div className="flex flex-col items-center border border-gray-200 shadow-custom p-4 sm:p-6 rounded-lg w-[90%] sm:w-fit">
         <h1 className="text-4xl font-bold text-violet-950 text-center">
           Winrate Calculator
         </h1>
