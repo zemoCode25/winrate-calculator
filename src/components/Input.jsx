@@ -23,7 +23,7 @@ export function Input({
 }
 
 function CurrentForm({ updateCurrentContent }) {
-  const [formData, setFormData] = useState({ wins: 0, losses: 0 });
+  const [formData, setFormData] = useState({ wins: "", losses: "" });
 
   function calculateTotalMatches(wins, losses) {
     const totalMatches = wins + losses;
@@ -92,9 +92,9 @@ function CurrentForm({ updateCurrentContent }) {
 
 function DesiredForm({ updateDesiredContent }) {
   const [formData, setFormData] = useState({
-    totalMatches: 0,
-    currentWr: 0,
-    desiredWr: 0,
+    totalMatches: "",
+    currentWr: "",
+    desiredWr: "",
   });
 
   function calculateConsecutiveWins(
