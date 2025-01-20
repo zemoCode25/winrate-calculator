@@ -11,6 +11,11 @@ export default {
       custom:
         "0 5px 6px -1px rgba(128, 0, 128, 0.1), 0 2px 4px -1px rgba(128, 0, 128, 0.06)",
     },
+    screens: {
+      xs: "360px",
+      sm: "640px",
+      md: "768px",
+    },
   },
   plugins: [],
 };
