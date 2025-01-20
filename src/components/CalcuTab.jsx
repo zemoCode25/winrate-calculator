@@ -27,5 +27,5 @@ export function CalcuTab({ handleChangeCalcu, page }) {
 
 CalcuTab.propTypes = {
   handleChangeCalcu: PropTypes.func.isRequired,
-  page: PropTypes.func.isRequired,
+  page: PropTypes.string.isRequired,
 };

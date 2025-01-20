@@ -44,11 +44,11 @@ function CurrentForm({ updateCurrentContent }) {
 
   function handleFormChange(e) {
     const { name, value } = e.target;
-
     if (/^\d*$/.test(value)) {
+      const currentValue = value === "" ? "" : Number(value);
       setFormData((prevForm) => ({
         ...prevForm,
-        [name]: Number(value),
+        [name]: currentValue,
       }));
     }
   }

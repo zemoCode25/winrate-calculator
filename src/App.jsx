@@ -14,7 +14,7 @@ export function App() {
       </div>
       <footer className="mt-2">
         <small>
-          Developed by
+          Developed by{" "}
           <a
             className="font-semibold underline"
             target="_blank"
